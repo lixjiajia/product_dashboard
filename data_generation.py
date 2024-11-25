@@ -5,7 +5,6 @@ from datetime import timedelta
 
 fake = Faker()
 
-# List of dietary preferences
 dietary_preferences = ["Vegetarian", "Vegan", "Keto", "Gluten-Free", "None"]
 
 # Function to generate subscription data
@@ -30,7 +29,6 @@ def generate_subscription_data(num_customers):
         # Assign a random dietary preference
         dietary_preference = random.choice(dietary_preferences)
         
-        # Append to dataset
         data.append((customer_id, subscription_type, start_date, end_date, status, dietary_preference))
     
     return data

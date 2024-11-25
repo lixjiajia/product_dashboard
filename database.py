@@ -47,7 +47,7 @@ def insert_order_data(cursor, order_data):
 
 def fetch_data_from_db():
     conn, cursor = create_connection()
-    # Query the necessary data from the database
+    
     cursor.execute("SELECT * FROM customers")
     customers_data = cursor.fetchall()
 

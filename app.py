@@ -43,7 +43,7 @@ meal_category_fig = px.bar(
 )
 orders_with_subscription = pd.merge(
     orders_data,
-    customers_data[['customer_id', 'subscription_type']],  # Select relevant columns
+    customers_data[['customer_id', 'subscription_type']], 
     on='customer_id',
     how='left'
 )
