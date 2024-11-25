@@ -6,6 +6,7 @@ from database import fetch_data_from_db
 import datetime
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Fetch data from the database
 customers_data, orders_data = fetch_data_from_db()
